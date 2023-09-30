@@ -1,0 +1,57 @@
+
+# 1. Create a text File of 500 word 
+
+# text = """
+# Till now, we were taking the input from the  this console and writing it back to the console to interact with the user.
+# Sometimes, it is not enough to only display the data on the console. The data to be displayed may be very large, and only a limited amount of data can be displayed on the console since the memory is volatile, it is impossible to recover the programmatically generated data again and again.
+# The file handling plays an important role when the data needs to be stored permanently into the file. A file is a named location on disk to store related information. We can access the stored information (non-volatile) after the program termination.
+# The file-handling implementation is slightly this lengthy or complicated in the other programming language, but it is easier and shorter in Python.
+# In Python, files are treated in two these  modes as text or binary. The file may be in the text or binary format, and each line of a file is ended with the special character.
+# As an Adblock Plus user, you know firsthand the value that our software brings to your online experience. By blocking unwanted and intrusive ads, Adblock Plus helps you browse the web faster, safer, and with fewer distractions. But did you know that Adblock Plus is completely free, with no hidden fees? We believe that everyone should have access to a better, ad-free internet, which is why we offer Adblock Plus for free to all users.
+# But we need your help to keep Adblock Plus running and improving. this
+# While a small percentage of users generously contribute to support our mission, this
+# we rely on the support of users like you to keep Adblock Plus alive and free for everyone. this
+# Your contribution, no matter how small, these can make a big difference. this
+# So if Adblock Plus has saved you even just a few dollars or hours of frustration from dealing with unwanted ads, 
+# please consider contributing to support our team and advance the cause of an ad-free internet for all. 
+# Thank you for your support. these
+# Together, we can make the internet a better place for everyone.
+# """
+
+
+# fp = open("myText.txt" , "w")
+# fp.write(text) 
+
+
+# 2. A function to count and display the total words in the file 
+
+
+# def countDisplay():
+#     cc = 0   # THIS
+#     cc1 = 0  # THESE
+#     file = open("myText.txt", "rt")
+#     data = file.read()
+#     words = data.split()
+#     print('Number of words in text file :', len(words)) 
+#     for x in words:
+#         if x == "this":
+#             cc = cc+1               
+#         if x == "these":
+#             cc1 = cc1+1              
+#     print("Total this = : ",cc)              
+#     print("Total these = : ",cc1)                     
+# countDisplay()        
+
+
+# # 3. Count the UpperCase words in the file 
+
+# def countUpperCase():
+#     fp = open("myText.txt", "rt")
+#     data=fp.read()
+#     upper = 0
+#     for dt in data:
+#         if(dt.isupper):
+#             upper += 1
+#     print("Total UpperCase Characters = : ",upper) 
+    
+# countUpperCase()    
